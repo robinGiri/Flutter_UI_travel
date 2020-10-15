@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:tarvelApp/widget/DestinationCarousal.dart';
+import 'package:tarvelApp/widget/HotelCarousal.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -56,9 +57,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   style:
                       TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold)),
             ),
-            SizedBox(
-              height: 20,
-            ),
+            SizedBox(height: 20),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: _icon
@@ -69,10 +68,10 @@ class _HomeScreenState extends State<HomeScreen> {
                   )
                   .toList(),
             ),
-            SizedBox(
-              height: 20,
-            ),
+            SizedBox(height: 20),
             DestinationCarousal(),
+            SizedBox(height: 20),
+            HotelCarousal(),
           ],
         ),
       ),
